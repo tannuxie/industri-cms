@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "addressstring1": {
+      "required": true,
+      "type": "string"
+    },
+    "addressstring2": {
+      "required": true,
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "startdate": {
+      "type": "date",
+      "required": true
+    },
+    "enddate": {
+      "type": "date"
+    },
+    "company": {
+      "model": "company",
+      "via": "addresses"
+    }
+  }
+}

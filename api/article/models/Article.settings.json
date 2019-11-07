@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "content": {
+      "required": true,
+      "type": "richtext"
+    },
+    "quality": {
+      "enum": [
+        "1",
+        "2",
+        "3"
+      ],
+      "type": "enumeration"
+    },
+    "coverimage": {
+      "model": "image",
+      "via": "articlecoverimage"
+    }
+  }
+}

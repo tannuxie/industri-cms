@@ -1,0 +1,73 @@
+{
+  "connection": "default",
+  "collectionName": "companies",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "summary": {
+      "required": true,
+      "type": "text"
+    },
+    "companyquality": {
+      "default": "1",
+      "enum": [
+        "1",
+        "2",
+        "3"
+      ],
+      "type": "enumeration"
+    },
+    "longtext": {
+      "required": true,
+      "type": "richtext"
+    },
+    "type": {
+      "required": true,
+      "enum": [
+        "trä",
+        "metall",
+        "möbler / träförädling",
+        "livsmedel",
+        "skor & kläder",
+        "plast / gummi",
+        "övrigt / diverse"
+      ],
+      "type": "enumeration"
+    },
+    "city": {
+      "required": true,
+      "enum": [
+        "sävsjö",
+        "vrigstad",
+        "stockaryd",
+        "rörvik",
+        "hultagård",
+        "hylletofta"
+      ],
+      "default": "sävsjö",
+      "type": "enumeration"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "company"
+    },
+    "mainimage": {
+      "model": "image",
+      "via": "companyimage"
+    }
+  }
+}
