@@ -68,6 +68,10 @@
     "mainimage": {
       "model": "image",
       "via": "companyimage"
+    },
+    "published": {
+      "required": true,
+      "type": "boolean"
     }
   }
 }
