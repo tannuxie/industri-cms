@@ -33,12 +33,12 @@
       ],
       "type": "enumeration"
     },
+    "published": {
+      "type": "boolean"
+    },
     "coverimage": {
       "model": "image",
       "via": "articlecoverimage"
-    },
-    "published": {
-      "type": "boolean"
     }
   }
 }

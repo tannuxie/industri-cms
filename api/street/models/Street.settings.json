@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -38,6 +41,19 @@
         "hylletofta"
       ],
       "type": "enumeration"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "imagecontent": {
+      "model": "image",
+      "via": "streetimage"
     }
   }
 }

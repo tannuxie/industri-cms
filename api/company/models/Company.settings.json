@@ -65,13 +65,13 @@
       "collection": "address",
       "via": "company"
     },
-    "mainimage": {
-      "model": "image",
-      "via": "companyimage"
-    },
     "published": {
       "required": true,
       "type": "boolean"
+    },
+    "mainimage": {
+      "model": "image",
+      "via": "companyimage"
     }
   }
 }

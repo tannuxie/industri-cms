@@ -35,6 +35,10 @@
     "articlecoverimage": {
       "model": "article",
       "via": "coverimage"
+    },
+    "streetimage": {
+      "model": "street",
+      "via": "imagecontent"
     }
   }
 }
