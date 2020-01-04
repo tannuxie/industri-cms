@@ -18,19 +18,38 @@
       "required": true,
       "type": "string"
     },
-    "latitude": {
-      "required": true,
-      "type": "string"
+    "summary": {
+      "type": "text",
+      "required": true
     },
-    "longitude": {
-      "required": true,
-      "type": "string"
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     },
-    "zoom": {
-      "required": true,
-      "type": "string"
+    "mainimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
     },
-    "city": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text-content",
+        "content.bildbox",
+        "content.2col-text-img",
+        "content.map",
+        "content.2col-text"
+      ],
+      "required": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "streets",
+      "dominant": true
+    },
+	"city": {
       "required": true,
       "enum": [
         "sävsjö",
@@ -40,20 +59,8 @@
         "hultagård",
         "hylletofta"
       ],
+      "default": "sävsjö",
       "type": "enumeration"
-    },
-    "summary": {
-      "type": "text"
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "published": {
-      "type": "boolean"
-    },
-    "imagecontent": {
-      "model": "image",
-      "via": "streetimage"
     }
   }
 }

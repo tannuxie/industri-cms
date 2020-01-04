@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "random-company",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "filtrering": {
+      "type": "integer",
+      "default": 2,
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_foretag_random_companies"
+}

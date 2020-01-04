@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_2col_text_imgs",
+  "info": {
+    "name": "2col_text-img",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.text-content"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "bild_hoger",
+        "bild_vanster"
+      ],
+      "default": "bild_hoger"
+    },
+    "imgbox": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.imgbox"
+    },
+    "undertext_bildbox": {
+	  "default": "",
+      "type": "string"
+    },
+	"bredd_bildbox": {
+      "default": "1/2",
+      "enum": [
+        "2/3",
+        "1/2",
+		"1/3",
+        "1/4"
+      ],
+      "type": "enumeration"
+    }
+  }
+}

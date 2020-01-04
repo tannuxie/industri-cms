@@ -1,8 +1,8 @@
 {
-  "name": "cms",
+  "name": "industri-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "CMS sävsjö industrihistoria",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -19,21 +19,20 @@
   },
   "dependencies": {
     "lodash": "^4.17.5",
-    "strapi": "3.0.0-beta.17.5",
-    "strapi-admin": "3.0.0-beta.17.5",
-    "strapi-utils": "3.0.0-beta.17.5",
-    "strapi-plugin-content-type-builder": "3.0.0-beta.17.5",
-    "strapi-plugin-content-manager": "3.0.0-beta.17.5",
-    "strapi-plugin-users-permissions": "3.0.0-beta.17.5",
-    "strapi-plugin-email": "3.0.0-beta.17.5",
-    "strapi-plugin-upload": "3.0.0-beta.17.5",
-    "strapi-hook-bookshelf": "3.0.0-beta.17.5",
-    "strapi-hook-knex": "3.0.0-beta.17.5",
+    "strapi": "3.0.0-beta.18.3",
+    "strapi-admin": "3.0.0-beta.18.3",
+    "strapi-connector-bookshelf": "3.0.0-beta.18.3",
+    "strapi-utils": "3.0.0-beta.18.3",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.18.3",
+    "strapi-plugin-content-manager": "3.0.0-beta.18.3",
+    "strapi-plugin-users-permissions": "3.0.0-beta.18.3",
+    "strapi-plugin-email": "3.0.0-beta.18.3",
+    "strapi-plugin-upload": "3.0.0-beta.18.3",
     "knex": "latest",
     "pg": "latest"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Johannes Henriksson"
   },
   "strapi": {
     "uuid": "e619398d-3ccd-44d6-9cd2-6b62a6f8ad24"

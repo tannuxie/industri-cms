@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_imgboxes",
+  "info": {
+    "name": "imgbox",
+    "icon": "border-all"
+  },
+  "options": {},
+  "attributes": {
+    "beskrivning": {
+	  "required": true,
+      "type": "string"
+    },
+    "bildfil": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

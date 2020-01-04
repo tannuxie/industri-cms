@@ -18,27 +18,35 @@
       "required": true,
       "type": "string"
     },
-    "date": {
-      "type": "date"
+    "published": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     },
     "content": {
-      "required": true,
-      "type": "richtext"
-    },
-    "quality": {
-      "enum": [
-        "1",
-        "2",
-        "3"
+      "type": "dynamiczone",
+      "components": [
+        "content.bildbox",
+        "content.text-content",
+        "content.map",
+        "content.2col-text-img",
+        "content.2col-text"
       ],
-      "type": "enumeration"
+      "required": true
     },
-    "published": {
-      "type": "boolean"
+    "mainimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
     },
-    "coverimage": {
-      "model": "image",
-      "via": "articlecoverimage"
+    "tags": {
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
+    },
+    "date": {
+      "type": "date"
     }
   }
 }

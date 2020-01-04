@@ -29,15 +29,11 @@
       "type": "string"
     },
     "startdate": {
-      "type": "date",
+      "type": "datetime",
       "required": true
     },
     "enddate": {
-      "type": "date"
-    },
-    "company": {
-      "model": "company",
-      "via": "addresses"
+      "type": "datetime"
     }
   }
 }

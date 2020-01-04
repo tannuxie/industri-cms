@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_maps",
+  "info": {
+    "name": "karta",
+    "icon": "mountain"
+  },
+  "options": {},
+  "attributes": {
+    "undertext": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "map_pin": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.map-pin"
+    },
+    "zoom": {
+      "type": "integer",
+      "default": 13,
+      "required": true
+    }
+  }
+}

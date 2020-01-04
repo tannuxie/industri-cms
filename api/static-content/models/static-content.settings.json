@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "static_contents",
+  "info": {
+    "name": "static content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text-content",
+        "content.bildbox",
+        "content.map",
+        "content.2col-text-img",
+        "content.2col-text",
+        "foretag.random-company"
+      ],
+      "required": true
+    },
+	"role": {
+      "required": true,
+      "enum": [
+        "startsida",
+		"sävsjö",
+        "vrigstad",
+        "stockaryd",
+        "rörvik",
+        "hultagård",
+        "hylletofta",
+		"vandra",
+		"omoss"
+      ],
+      "default": "sävsjö",
+      "type": "enumeration"
+    }
+  }
+}

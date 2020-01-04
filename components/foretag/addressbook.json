@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "addressbook",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "addresstext1": {
+      "type": "string"
+    },
+    "addresstext2": {
+      "type": "string"
+    },
+    "startdate": {
+      "type": "date",
+      "required": true
+    },
+    "enddate": {
+      "type": "date"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_foretag_addressbooks"
+}

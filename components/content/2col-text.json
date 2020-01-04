@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_2col_texts",
+  "info": {
+    "name": "2col_text-text",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "text_vanster": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.text-content"
+    },
+    "text_hoger": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.text-content"
+    }
+  }
+}

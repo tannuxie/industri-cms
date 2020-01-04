@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_map_pins",
+  "info": {
+    "name": "map_pin",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "beskrivning": {
+      "type": "text",
+      "required": true
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

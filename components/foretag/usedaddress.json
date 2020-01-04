@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "components_foretag_usedaddresses",
+  "info": {
+    "name": "usedaddress",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "component",
+      "repeatable": true,
+      "component": "foretag.addressbook"
+    }
+  }
+}

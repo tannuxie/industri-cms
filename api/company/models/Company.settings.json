@@ -22,20 +22,40 @@
       "required": true,
       "type": "text"
     },
-    "companyquality": {
-      "default": "1",
-      "enum": [
-        "1",
-        "2",
-        "3"
-      ],
-      "type": "enumeration"
-    },
-    "longtext": {
+    "published": {
       "required": true,
-      "type": "richtext"
+      "type": "boolean",
+      "default": false
     },
-    "type": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.text-content",
+        "content.bildbox",
+        "content.2col-text-img",
+        "content.map",
+        "content.2col-text"
+      ],
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": true,
+      "component": "foretag.addressbook",
+      "required": true
+    },
+    "mainimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "companies",
+      "dominant": true
+    },
+	"type": {
       "required": true,
       "enum": [
         "trä",
@@ -46,6 +66,7 @@
         "plast / gummi",
         "övrigt / diverse"
       ],
+	  "default": "övrigt / diverse",
       "type": "enumeration"
     },
     "city": {
@@ -61,17 +82,14 @@
       "default": "sävsjö",
       "type": "enumeration"
     },
-    "addresses": {
-      "collection": "address",
-      "via": "company"
-    },
-    "published": {
-      "required": true,
-      "type": "boolean"
-    },
-    "mainimage": {
-      "model": "image",
-      "via": "companyimage"
+	"quality": {
+      "default": "1",
+      "enum": [
+        "1",
+        "2",
+        "3"
+      ],
+      "type": "enumeration"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_bilds",
+  "info": {
+    "name": "bild",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "beskrivning": {
+	  "required": true,
+      "type": "string"
+    },
+    "bildfil": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

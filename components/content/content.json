@@ -1,0 +1,10 @@
+{
+  "connection": "default",
+  "collectionName": "components_content_contents",
+  "info": {
+    "name": "content",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {}
+}
