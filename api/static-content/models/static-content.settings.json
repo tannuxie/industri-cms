@@ -32,7 +32,10 @@
         "hultagård",
         "hylletofta",
 		"vandra",
-		"omoss"
+		"omoss",
+		"footer 1",
+		"footer 2",
+		"footer 3"
       ],
       "default": "sävsjö",
       "type": "enumeration"
