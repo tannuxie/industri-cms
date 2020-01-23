@@ -1,9 +1,7 @@
 {
-  "connection": "default",
-  "collectionName": "components_content_maps",
   "info": {
     "name": "karta",
-    "icon": "mountain"
+    "icon": "file-image"
   },
   "options": {},
   "attributes": {
@@ -11,20 +9,22 @@
       "type": "string"
     },
     "latitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "longitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
-    "map_pin": {
+    "zoom": {
+      "type": "integer"
+    },
+    "map_pins": {
       "type": "component",
       "repeatable": true,
       "component": "content.map-pin"
-    },
-    "zoom": {
-      "type": "integer",
-      "default": 13,
-      "required": true
     }
-  }
+  },
+  "connection": "default",
+  "collectionName": "components_content_kartas"
 }

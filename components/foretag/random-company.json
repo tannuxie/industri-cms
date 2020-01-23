@@ -5,10 +5,15 @@
   },
   "options": {},
   "attributes": {
-    "filtrering": {
-      "type": "integer",
-      "default": 2,
-      "required": true
+	"filter": {
+      "required": true,
+      "enum": [
+        "ett_eller_mer",
+        "tva_eller_tre",
+        "endast_tre"
+      ],
+      "default": "ett_eller_mer",
+      "type": "enumeration"
     }
   },
   "connection": "default",

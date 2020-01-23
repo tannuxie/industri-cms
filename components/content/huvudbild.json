@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "huvudbild",
+    "icon": "camera-retro"
+  },
+  "options": {},
+  "attributes": {
+    "bild": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "utfyllnadsgrad": {
+      "type": "enumeration",
+      "enum": [
+        "passa_layout",
+        "bibehall_proportioner"
+      ],
+      "default": "passa_layout",
+      "required": true
+    },
+    "bildfokus": {
+      "type": "enumeration",
+      "enum": [
+        "topp",
+        "center",
+        "botten"
+      ],
+      "default": "center",
+      "required": true
+    },
+    "bildlayout": {
+      "type": "enumeration",
+      "enum": [
+        "fullbredd",
+        "vanster",
+        "hoger"
+      ],
+      "default": "fullbredd",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_content_huvudbilds"
+}

@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "components_content_2col_text_imgs",
+  "collectionName": "components_content_textboxes",
   "info": {
-    "name": "2col_text_bild",
-    "icon": "columns"
+    "name": "textbox",
+    "icon": "file-alt"
   },
   "options": {},
   "attributes": {
@@ -16,29 +16,24 @@
     "layout": {
       "type": "enumeration",
       "enum": [
-        "bild_hoger",
-        "bild_vanster"
+        "center",
+        "vanster",
+        "hoger"
       ],
-      "default": "bild_hoger"
-    },
-    "imgbox": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content.imgbox",
+      "default": "center",
       "required": true
     },
-    "undertext_bildbox": {
-      "type": "string"
-    },
-    "bredd_bildbox": {
-      "default": "halv",
+    "size": {
+      "type": "enumeration",
       "enum": [
+        "fullbredd",
         "tva_tredjedelar",
         "halv",
         "en_tredjedel",
         "en_fjardedel"
       ],
-      "type": "enumeration"
+      "default": "halv",
+      "required": true
     }
   }
 }

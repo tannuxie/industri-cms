@@ -23,30 +23,31 @@
       "required": true,
       "default": false
     },
+	"date": {
+      "type": "date"
+    },
+    "huvudbild": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.huvudbild",
+      "required": true
+    },
     "content": {
       "type": "dynamiczone",
       "components": [
+        "content.textbox",
         "content.bildbox",
-        "content.text-content",
-        "content.map",
-        "content.2col-text-img",
-        "content.2col-text"
+        "content.karta",
+        "content.2col-text",
+        "content.2col-text-karta",
+        "content.2col-text-img"
       ],
-      "required": true
-    },
-    "mainimage": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
       "required": true
     },
     "tags": {
       "collection": "tag",
       "via": "articles",
       "dominant": true
-    },
-    "date": {
-      "type": "date"
     }
   }
 }

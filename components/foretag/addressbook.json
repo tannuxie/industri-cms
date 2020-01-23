@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "components_foretag_addressbooks",
   "info": {
     "name": "addressbook",
     "icon": "address-book"
@@ -6,10 +8,12 @@
   "options": {},
   "attributes": {
     "addresstext1": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "addresstext2": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "startdate": {
       "type": "date",
@@ -19,12 +23,12 @@
       "type": "date"
     },
     "latitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "longitude": {
-      "type": "float"
+      "type": "float",
+      "required": true
     }
-  },
-  "connection": "default",
-  "collectionName": "components_foretag_addressbooks"
+  }
 }

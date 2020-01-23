@@ -9,36 +9,39 @@
     "timestamps": true
   },
   "attributes": {
-    "content": {
-      "type": "dynamiczone",
-      "components": [
-        "content.text-content",
-        "content.bildbox",
-        "content.map",
-        "content.2col-text-img",
-        "content.2col-text",
-        "foretag.random-company"
-      ],
-      "required": true
-    },
-	"role": {
+    "role": {
       "required": true,
       "enum": [
         "startsida",
-		"sävsjö",
+        "sävsjö",
         "vrigstad",
         "stockaryd",
         "rörvik",
         "hultagård",
         "hylletofta",
-		"vandra",
-		"omoss",
-		"footer 1",
-		"footer 2",
-		"footer 3"
+        "vandra",
+        "omoss",
+        "footer 1",
+        "footer 2",
+        "footer 3",
+		"ovrigt"
       ],
-      "default": "sävsjö",
+      "default": "startsida",
       "type": "enumeration"
+    },
+	"content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.textbox",
+        "content.bildbox",
+        "content.karta",
+        "content.2col-text",
+        "content.2col-text-karta",
+        "content.2col-text-img",
+        "foretag.random-company"
+      ],
+      "required": true
     }
+
   }
 }

@@ -1,12 +1,18 @@
 {
   "connection": "default",
-  "collectionName": "components_content_2col_text_imgs",
+  "collectionName": "components_content_2col_text_kartas",
   "info": {
-    "name": "2col_text_bild",
-    "icon": "columns"
+    "name": "2col_text_karta",
+    "icon": "clone"
   },
   "options": {},
   "attributes": {
+    "karta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.karta",
+      "required": true
+    },
     "text": {
       "type": "component",
       "repeatable": false,
@@ -16,29 +22,22 @@
     "layout": {
       "type": "enumeration",
       "enum": [
-        "bild_hoger",
-        "bild_vanster"
+        "karta_vanster",
+        "karta_hoger"
       ],
-      "default": "bild_hoger"
-    },
-    "imgbox": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content.imgbox",
+      "default": "karta_hoger",
       "required": true
     },
-    "undertext_bildbox": {
-      "type": "string"
-    },
-    "bredd_bildbox": {
-      "default": "halv",
+    "bredd_karta": {
+      "type": "enumeration",
       "enum": [
         "tva_tredjedelar",
         "halv",
         "en_tredjedel",
         "en_fjardedel"
       ],
-      "type": "enumeration"
+      "default": "halv",
+      "required": true
     }
   }
 }

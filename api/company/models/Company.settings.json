@@ -27,27 +27,16 @@
       "type": "boolean",
       "default": false
     },
-    "content": {
-      "type": "dynamiczone",
-      "components": [
-        "content.text-content",
-        "content.bildbox",
-        "content.2col-text-img",
-        "content.map",
-        "content.2col-text"
-      ],
-      "required": true
-    },
     "address": {
       "type": "component",
       "repeatable": true,
       "component": "foretag.addressbook",
       "required": true
     },
-    "mainimage": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
+    "huvudbild": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.huvudbild",
       "required": true
     },
     "tags": {
@@ -55,7 +44,7 @@
       "via": "companies",
       "dominant": true
     },
-	"type": {
+    "type": {
       "required": true,
       "enum": [
         "trä",
@@ -66,7 +55,7 @@
         "plast / gummi",
         "övrigt / diverse"
       ],
-	  "default": "övrigt / diverse",
+      "default": "övrigt / diverse",
       "type": "enumeration"
     },
     "city": {
@@ -82,7 +71,7 @@
       "default": "sävsjö",
       "type": "enumeration"
     },
-	"quality": {
+    "quality": {
       "default": "1",
       "enum": [
         "1",
@@ -90,6 +79,18 @@
         "3"
       ],
       "type": "enumeration"
+    },
+	"content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.textbox",
+        "content.bildbox",
+        "content.karta",
+        "content.2col-text",
+        "content.2col-text-karta",
+        "content.2col-text-img"
+      ],
+      "required": true
     }
   }
 }

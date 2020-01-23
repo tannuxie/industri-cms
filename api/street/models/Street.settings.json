@@ -27,20 +27,21 @@
       "default": false,
       "required": true
     },
-    "mainimage": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
+    "huvudbild": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.huvudbild",
       "required": true
     },
     "content": {
       "type": "dynamiczone",
       "components": [
-        "content.text-content",
+        "content.textbox",
         "content.bildbox",
-        "content.2col-text-img",
-        "content.map",
-        "content.2col-text"
+        "content.karta",
+        "content.2col-text",
+        "content.2col-text-karta",
+        "content.2col-text-img"
       ],
       "required": true
     },
@@ -49,7 +50,7 @@
       "via": "streets",
       "dominant": true
     },
-	"city": {
+    "city": {
       "required": true,
       "enum": [
         "sävsjö",

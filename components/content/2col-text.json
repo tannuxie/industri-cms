@@ -2,7 +2,7 @@
   "connection": "default",
   "collectionName": "components_content_2col_texts",
   "info": {
-    "name": "2col_text-text",
+    "name": "2col_text_text",
     "icon": "book-open"
   },
   "options": {},
@@ -10,12 +10,14 @@
     "text_vanster": {
       "type": "component",
       "repeatable": false,
-      "component": "content.text-content"
+      "component": "content.text-content",
+      "required": true
     },
     "text_hoger": {
       "type": "component",
       "repeatable": false,
-      "component": "content.text-content"
+      "component": "content.text-content",
+      "required": true
     }
   }
 }
