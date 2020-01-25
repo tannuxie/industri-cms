@@ -27,11 +27,49 @@
       "default": false,
       "required": true
     },
-    "huvudbild": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.huvudbild",
+    "mainimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
       "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "huvudbild_fullbredd",
+        "huvudbild_vanster",
+        "huvudbild_hoger"
+      ],
+      "default": "huvudbild_fullbredd",
+      "required": true
+    },
+	"bildfokus": {
+      "type": "enumeration",
+      "enum": [
+        "topp",
+        "center",
+        "botten"
+      ],
+      "default": "center",
+      "required": true
+    },
+    "city": {
+      "required": true,
+      "enum": [
+        "savsjo",
+        "vrigstad",
+        "stockaryd",
+        "rorvik",
+        "hultagard",
+        "hylletofta"
+      ],
+      "default": "savsjo",
+      "type": "enumeration"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "streets",
+      "dominant": true
     },
     "content": {
       "type": "dynamiczone",
@@ -44,24 +82,6 @@
         "content.2col-text-img"
       ],
       "required": true
-    },
-    "tags": {
-      "collection": "tag",
-      "via": "streets",
-      "dominant": true
-    },
-    "city": {
-      "required": true,
-      "enum": [
-        "sävsjö",
-        "vrigstad",
-        "stockaryd",
-        "rörvik",
-        "hultagård",
-        "hylletofta"
-      ],
-      "default": "sävsjö",
-      "type": "enumeration"
     }
   }
 }

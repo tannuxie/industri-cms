@@ -27,16 +27,73 @@
       "type": "boolean",
       "default": false
     },
+    "mainimage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "huvudbild_fullbredd",
+        "huvudbild_vanster",
+        "huvudbild_hoger"
+      ],
+      "default": "huvudbild_fullbredd",
+      "required": true
+    },
+	"bildfokus": {
+      "type": "enumeration",
+      "enum": [
+        "topp",
+        "center",
+        "botten"
+      ],
+      "default": "center",
+      "required": true
+    },
     "address": {
       "type": "component",
       "repeatable": true,
       "component": "foretag.addressbook",
       "required": true
     },
-    "huvudbild": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.huvudbild",
+    "type": {
+      "required": true,
+      "enum": [
+        "tra",
+        "metall",
+        "moblertraforadling",
+        "livsmedel",
+        "skorklader",
+        "plastgummi",
+        "ovrigtdiverse"
+      ],
+      "default": "ovrigtdiverse",
+      "type": "enumeration"
+    },
+    "city": {
+      "required": true,
+      "enum": [
+        "savsjo",
+        "vrigstad",
+        "stockaryd",
+        "rorvik",
+        "hultagard",
+        "hylletofta"
+      ],
+      "default": "savsjo",
+      "type": "enumeration"
+    },
+    "quality": {
+      "default": "ett",
+      "enum": [
+        "ett",
+        "tva",
+        "tre"
+      ],
+      "type": "enumeration",
       "required": true
     },
     "tags": {
@@ -44,43 +101,7 @@
       "via": "companies",
       "dominant": true
     },
-    "type": {
-      "required": true,
-      "enum": [
-        "trä",
-        "metall",
-        "möbler / träförädling",
-        "livsmedel",
-        "skor & kläder",
-        "plast / gummi",
-        "övrigt / diverse"
-      ],
-      "default": "övrigt / diverse",
-      "type": "enumeration"
-    },
-    "city": {
-      "required": true,
-      "enum": [
-        "sävsjö",
-        "vrigstad",
-        "stockaryd",
-        "rörvik",
-        "hultagård",
-        "hylletofta"
-      ],
-      "default": "sävsjö",
-      "type": "enumeration"
-    },
-    "quality": {
-      "default": "1",
-      "enum": [
-        "1",
-        "2",
-        "3"
-      ],
-      "type": "enumeration"
-    },
-	"content": {
+    "content": {
       "type": "dynamiczone",
       "components": [
         "content.textbox",

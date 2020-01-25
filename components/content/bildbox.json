@@ -16,7 +16,7 @@
     "undertext": {
       "type": "string"
     },
-    "width": {
+    "size": {
       "default": "fullbredd",
       "enum": [
         "fullbredd",
