@@ -27,7 +27,7 @@
       "type": "boolean",
       "default": false
     },
-    "mainimage": {
+    "companyimage": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
@@ -43,7 +43,7 @@
       "default": "huvudbild_fullbredd",
       "required": true
     },
-	"bildfokus": {
+    "bildfokus": {
       "type": "enumeration",
       "enum": [
         "topp",
